@@ -47,22 +47,22 @@
       <main>
         <div class="container">
           <div class="row row-cols-3">
-            <div class="col">
+            <div v-for="album in albums" :key="album.title" class="col">
               <!-- Cards -->
               <div class="card p-5">
                 <!-- card image -->
                 <figure>
                   <img
-                    src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg"
+                    :src="album.poster"
                     class="card-img-top"
-                    alt="prova"
+                    :alt="album.title"
                   />
                 </figure>
                 <!-- card text -->
                 <div class="card-body text-center">
-                  <h5 class="card-title">New Jersey</h5>
-                  <p class="mb-2">Bon Jovi</p>
-                  <strong>1988</strong>
+                  <h5 class="card-title">{{album.title}}</h5>
+                  <p class="mb-2">{{album.author}}</p>
+                  <strong>{{album.year}}</strong>
                 </div>
               </div>
             </div>
