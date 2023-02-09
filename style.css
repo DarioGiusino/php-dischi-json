@@ -20,4 +20,5 @@ main {
 .card.p-5 {
   background-color: #112030;
   color: #f4eee5;
+  margin-bottom: 1.5rem;
 }
