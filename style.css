@@ -2,14 +2,22 @@
 header {
   background-color: #06131f;
   height: 80px;
+  padding: 1rem 0;
 }
 
 main {
   background-color: #1d2d3c;
   height: calc(100vh - 80px);
+  padding-top: 2rem;
 }
 
 /* header */
 .header-logo {
   max-height: 100%;
+}
+
+/* card */
+.card.p-5 {
+  background-color: #112030;
+  color: #f4eee5;
 }
