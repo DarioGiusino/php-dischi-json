@@ -7,6 +7,7 @@ const app = createApp({
   data() {
     return {
       albums: [],
+      isClosed: true,
     };
   },
 

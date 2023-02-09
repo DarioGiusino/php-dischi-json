@@ -45,6 +45,7 @@
 
       <!-- main -->
       <main>
+        <!-- Cards row container -->
         <div class="container">
           <div class="row row-cols-3">
             <div v-for="album in albums" :key="album.title" class="col">
@@ -67,6 +68,27 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <!-- cards modal -->
+        <div class="card-modal" :class="{'d-none': isClosed}">
+          <div>
+            <figure class="modal-pic">
+              <img
+                class="img-fluid"
+                src="https://images-na.ssl-images-amazon.com/images/I/51sBr4IWDwL.jpg"
+                alt="prova"
+              />
+            </figure>
+            <!-- card text -->
+            <div class="text-center">
+              <h5 class="card-title">titolo</h5>
+              <p class="mb-0">autore</p>
+              <strong>anno</strong>
+            </div>
+          </div>
+
+          <button type="button" class="btn-close"></button>
         </div>
       </main>
     </div>
