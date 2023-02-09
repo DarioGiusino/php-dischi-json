@@ -1,8 +1,15 @@
+/* # generics */
 header {
   background-color: #06131f;
   height: 80px;
 }
 
+main {
+  background-color: #1d2d3c;
+  height: calc(100vh - 80px);
+}
+
+/* header */
 .header-logo {
   max-height: 100%;
 }
